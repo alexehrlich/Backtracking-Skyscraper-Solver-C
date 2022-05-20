@@ -57,7 +57,8 @@ int	main(int argc, char **argv)
 	}
 	ft_init_grid(&p_grid, &p_user_input);  //write views from user input to the 6x6 grid and fills up the rest with 0s
 	printf("Empty grid: \n");
-	ft_print_grid(&p_grid);	ft_prefill_save_values(&p_grid); //prefill
+	ft_print_grid(&p_grid);	
+	ft_prefill_save_values(&p_grid); //works without prefilling
 	printf("Prefilled grid: \n");
 	ft_print_grid(&p_grid);
 	if (ft_solve_grid(1, 1, &p_grid) == 1) //solve grid and starts at (1, 1) (its within 4x4 grid)

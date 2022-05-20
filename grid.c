@@ -2,6 +2,10 @@
 #include "set_prefill_values.h"
 #include "grid.h"
 
+/*
+This function initialzies a 5x5 grid where the borders are the rules.
+the inner 4x4 is the puzzle and initialized with zeros.
+*/
 void	ft_init_grid(int **grid, int **user_input)
 {
 	int	i;
@@ -23,6 +27,10 @@ void	ft_init_grid(int **grid, int **user_input)
 	}
 }
 
+/*
+Based on the rules of the game, there are some safe values which can be set.
+These help to solve the puzzle faster.
+*/
 void	ft_prefill_save_values(int **grid)
 {
 	int	row;
@@ -45,6 +53,9 @@ void	ft_prefill_save_values(int **grid)
 	}
 }
 
+/*
+This function prints the 5x5 grid to the console
+*/
 void	ft_print_grid(int **grid_p)
 {
 	int		row;

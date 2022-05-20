@@ -23,7 +23,7 @@ int	ft_solve_grid(int row, int col, int **grid)
 		col = 1;
 		return (ft_solve_grid((row + 1), col, grid));
 	}
-	//If it is 0 it is a value we want to change.
+	//If it is 0, it is a value we want to change.
 	else
 	{
 		//so we call this function (has to be in another beacuse of rom limit...)

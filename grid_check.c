@@ -92,6 +92,11 @@ int	ft_check_sequence(int *sequence)
         return (0);
 }
 
+/*
+This function gets the crrent grid and the number of the col.
+It builds a sequence with the numbers in the col and checks, 
+whether it's valid with ft_check_sequence, forewards and backwards
+*/
 int	ft_check_col(int *grid, int col)
 {
 	int	sequence[6];
@@ -114,6 +119,11 @@ int	ft_check_col(int *grid, int col)
 	return (ft_check_sequence(sequence));
 }
 
+/*
+This function gets the crrent grid and the number of the row.
+It builds a sequence with the numbers in the row and checks, 
+whether it's valid with ft_check_sequence, forewards and backwards
+*/
 int	ft_check_row(int *grid, int row)
 {
 	int	sequence[6];
